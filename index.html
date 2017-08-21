@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html style="font-size:40px" id="html">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+    <title>talkmate</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      // 定义rem单位大小，放在页面加载之前 解决闪屏问题
+      (function (){
+        var device=document.documentElement.clientWidth;
+        var scale=device/375;
+        html.style.fontSize=scale*40+'px';
+      })();
+      // window.onload=size;
+      // window.onresize=size;
+    </script>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
